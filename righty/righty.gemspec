@@ -7,21 +7,22 @@ Gem::Specification.new do |spec|
   spec.name          = 'righty'
   spec.version       = Righty::VERSION
   spec.authors       = ['B. K. Oxley (binkley)']
-  spec.email         = ["binkley@alumni.rice.edu"]
+  spec.email         = ['binkley@alumni.rice.edu']
 
-  spec.summary       = %q{I am the left.}
-  spec.description   = %q{I am not the right.}
+  spec.summary       = 'I am the left.'
+  spec.description   = 'I am not the right.'
   spec.homepage      = 'http://no.where'
   spec.license       = 'MIT'
 
   spec.files         = `git ls-files -z`.split("\x0").reject do |f|
     f.match(%r{^(test|spec|features)/})
   end
-  spec.bindir        = "exe"
+  spec.bindir        = 'exe'
   spec.executables   = spec.files.grep(%r{^exe/}) { |f| File.basename(f) }
-  spec.require_paths = ["lib"]
+  spec.require_paths = ['lib']
 
-  spec.add_development_dependency "bundler", "~> 1.14"
-  spec.add_development_dependency "rake", "~> 10.0"
-  spec.add_development_dependency "rspec", "~> 3.0"
+  spec.add_development_dependency 'bundler', '~> 1.14'
+  spec.add_development_dependency 'rake', '~> 10.0'
+  spec.add_development_dependency 'rspec', '~> 3.0'
+  spec.add_development_dependency 'rubocop'
 end
