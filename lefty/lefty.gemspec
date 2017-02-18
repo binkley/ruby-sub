@@ -25,6 +25,5 @@ Gem::Specification.new do |spec|
   spec.add_development_dependency 'rake', '~> 10.0'
   spec.add_development_dependency 'rspec', '~> 3.0'
   spec.add_development_dependency 'rubocop'
-  # TODO: rubocop-rspec falls over
-  # spec.add_development_dependency 'rubocop-rspec'
+  spec.add_development_dependency 'rubocop-rspec'
 end
