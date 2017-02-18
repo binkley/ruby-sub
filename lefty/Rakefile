@@ -3,7 +3,9 @@ require 'rspec/core/rake_task'
 require 'rubocop/rake_task'
 
 RuboCop::RakeTask.new do |rubocop|
-  rubocop.verbose = false
+  # TODO: rubocop-rspec falls over
+  # rubocop.requires = %w(rubocop-rspec)
+  # rubocop.verbose = false
 end
 
 RSpec::Core::RakeTask.new(:spec) do |spec|
